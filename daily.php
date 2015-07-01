@@ -10,7 +10,7 @@ $videoTitle = "Test video";
 $filePath = $argv[1];
 $videoCategory = "fun";   
 
-$api->setGrantType(Dailymotion::GRANT_TYPE_PASSWORD, $apiKey, $apiSecret, array('write','delete'), array('username' => 'acidburn974', 'password' => '220967apcdk'));  
+$api->setGrantType(Dailymotion::GRANT_TYPE_PASSWORD, $apiKey, $apiSecret, array('write','delete'), array('username' => USERNAME_HERE, 'password' => PASSWORD_HERE));  
 
 $progressUrl = null;
 $url = $api->uploadFile($filePath, null, $progressUrl);
